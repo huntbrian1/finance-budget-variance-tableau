@@ -1,6 +1,6 @@
 # Finance Budget Variance Tableau Model
 
-This repository contains a Tableau budget-versus-actual model for corporate expense variance analysis. It packages a cleaned Excel transaction dataset, a Tableau packaged workbook, dashboard screenshots, and supporting source notes.
+This repository contains a Tableau budget-versus-actual model and an Excel FP&A portfolio workbook for corporate expense variance analysis. It packages a cleaned Excel transaction dataset, a Tableau packaged workbook, an expanded Excel analysis workbook, dashboard screenshots, and supporting source notes.
 
 The project is built around a common FP&A question: where is spending above plan, and which departments, categories, regions, and transactions are driving the variance?
 
@@ -17,6 +17,7 @@ The project is built around a common FP&A question: where is spending above plan
 ## Project Files
 
 - [Tableau packaged workbook](workbook/Budget%20vs%20Actual%20Tableau%20workbook.twbx)
+- [Excel FP&A portfolio workbook](workbook/Copy%20of%20Budget_vs_Actual_Data_PivotTables_PivotCharts.xlsx)
 - [Cleaned Excel dataset](data/Budget_vs_Actual_Data_clean.xlsx)
 - [Original project notes](docs/README_Corporate_Budget_Actual_source_notes.md)
 - [Corporate spending overview screenshot](assets/corporate-spending-overview.png)
@@ -88,6 +89,24 @@ It also includes ten worksheets:
 - Spend by Region
 - Top 10 Transactions
 - Transaction Count Vs Average Transaction Size
+
+## Excel FP&A Portfolio Workbook
+
+The Excel workbook in `workbook/Copy of Budget_vs_Actual_Data_PivotTables_PivotCharts.xlsx` extends the cleaned source data into a polished FP&A analysis file with native Excel PivotTables, PivotCharts, KPI summaries, and transaction review tabs.
+
+It includes:
+
+- Executive Summary
+- Monthly Performance
+- Department Analysis
+- Category Analysis
+- Regional Analysis
+- Department Category Matrix
+- Year Over Year
+- Transaction Review
+- Budget Accuracy
+
+The source table preserves the cleaned raw data and adds calculated fields for variance dollars, variance percent, over-budget flag, absolute variance percent, and accuracy band.
 
 ## Calculated Fields
 
@@ -184,8 +203,9 @@ The largest monthly overrun was December 2022, with a $5.2M unfavorable variance
 
 1. Download or clone the repository.
 2. Open `workbook/Budget vs Actual Tableau workbook.twbx` in Tableau Desktop or Tableau Public.
-3. Use the dashboard filters and worksheet interactions to explore spend by department, category, region, and time period.
-4. Review the cleaned Excel file in `data/` if you want to inspect or refresh the source data.
+3. Open `workbook/Copy of Budget_vs_Actual_Data_PivotTables_PivotCharts.xlsx` in Excel to review the FP&A portfolio workbook with PivotTables, PivotCharts, and KPI tabs.
+4. Use the dashboard filters and worksheet interactions to explore spend by department, category, region, and time period.
+5. Review the cleaned Excel file in `data/` if you want to inspect or refresh the source data.
 
 ## Repository Structure
 
@@ -199,7 +219,8 @@ finance-budget-variance-tableau/
 |-- docs/
 |   `-- README_Corporate_Budget_Actual_source_notes.md
 |-- workbook/
-|   `-- Budget vs Actual Tableau workbook.twbx
+|   |-- Budget vs Actual Tableau workbook.twbx
+|   `-- Copy of Budget_vs_Actual_Data_PivotTables_PivotCharts.xlsx
 `-- README.md
 ```
 
