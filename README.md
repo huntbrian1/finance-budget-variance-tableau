@@ -22,6 +22,14 @@ The project is built around a common FP&A question: where is spending above plan
 - [Corporate spending overview screenshot](assets/corporate-spending-overview.png)
 - [Variance analysis screenshot](assets/variance-analysis.png)
 
+## Data Source
+
+The underlying dataset is sourced from Kaggle:
+
+> **[Corporate Budget vs. Actual Dataset](https://www.kaggle.com/datasets/atharvasoundankar/corporate-budget-vs-actual-dataset)** — Atharva Soundankar, Kaggle
+
+The raw data was lightly cleaned (duplicates removed, nulls verified) before being loaded into Tableau. See the cleaned file in `data/` and the original source notes in `docs/`.
+
 ## Business Context
 
 The workbook analyzes simulated corporate spending from January 1, 2021 through December 31, 2023. Each transaction includes department, expense category, region, payment method, budget amount, actual amount, and transaction ID.
