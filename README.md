@@ -22,6 +22,8 @@ The project is built around a common FP&A question: where is spending above plan
 - [Original project notes](docs/README_Corporate_Budget_Actual_source_notes.md)
 - [Corporate spending overview screenshot](assets/corporate-spending-overview.png)
 - [Variance analysis screenshot](assets/variance-analysis.png)
+- [Category budget vs actual screenshot](assets/category-budget-vs-actual.png)
+- [Budget accuracy band screenshot](assets/budget-accuracy-band.png)
 
 ## Data Source
 
@@ -107,6 +109,16 @@ It includes:
 - Budget Accuracy
 
 The source table preserves the cleaned raw data and adds calculated fields for variance dollars, variance percent, over-budget flag, absolute variance percent, and accuracy band.
+
+### Excel Workbook Chart Previews
+
+#### Category Budget vs Actual
+
+![Category Budget vs Actual](assets/category-budget-vs-actual.png)
+
+#### Budget Accuracy
+
+![Transaction Count by Accuracy Band](assets/budget-accuracy-band.png)
 
 ## Calculated Fields
 
